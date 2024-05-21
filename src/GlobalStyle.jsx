@@ -1,3 +1,4 @@
+import "./normalize.css";
 import { createGlobalStyle } from "styled-components";
 import { WIDTH } from "./utils/constants";
 

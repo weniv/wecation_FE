@@ -1,7 +1,12 @@
 import React from "react";
+import { CommunityTemplate } from "../components/template";
 
 const CommunityPage = () => {
-  return <div>CommunityPage</div>;
+  return (
+    <div>
+      <CommunityTemplate />
+    </div>
+  );
 };
 
 export default CommunityPage;

@@ -28,8 +28,7 @@ export default NavHeader;
 
 const HeaderCont = styled.div`
   display: flex;
-  width: 100%;
-  margin: ${WIDTH.marginWidth};
+  width: Calc(100% - ${WIDTH.marginWidth} * 2);
   max-width: ${WIDTH.maxWidth};
   align-items: center;
   justify-content: space-between;

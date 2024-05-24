@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/wecation_fe/static/css/main.58462fbc.css",
+    "main.js": "/wecation_fe/static/js/main.efd44e30.js",
+    "index.html": "/wecation_fe/index.html",
+    "main.58462fbc.css.map": "/wecation_fe/static/css/main.58462fbc.css.map",
+    "main.efd44e30.js.map": "/wecation_fe/static/js/main.efd44e30.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58462fbc.css",
+    "static/js/main.efd44e30.js"
+  ]
+}

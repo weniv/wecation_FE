@@ -13,21 +13,19 @@ import { LogoLayout, NavLayout } from "../Layout";
 
 const Router = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path="/wecation_FE/">
-          <Route element={<NavLayout />}>
-            <Route index element={<MapPage />} />
-            <Route path="community" element={<CommunityPage />} />
-            <Route path="place/:id" element={<PlacePage />} />
-            <Route path="user" element={<UserPage />} />
-          </Route>
-          <Route element={<LogoLayout />}>
-            <Route path="login" element={<LoginPage />} />
-            <Route path="signup" element={<SignupPage />} />
-          </Route>
-          <Route path="*" element={<NotFoundPage />} />
+        <Route element={<NavLayout />}>
+          <Route index element={<MapPage />} />
+          <Route path="community" element={<CommunityPage />} />
+          <Route path="place/:id" element={<PlacePage />} />
+          <Route path="user" element={<UserPage />} />
         </Route>
+        <Route element={<LogoLayout />}>
+          <Route path="login" element={<LoginPage />} />
+          <Route path="signup" element={<SignupPage />} />
+        </Route>
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );

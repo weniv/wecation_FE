@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/wecation_FE/static/css/main.58462fbc.css",
-    "main.js": "/wecation_FE/static/js/main.ea42c688.js",
+    "main.js": "/wecation_FE/static/js/main.cd7a9f03.js",
     "index.html": "/wecation_FE/index.html",
     "main.58462fbc.css.map": "/wecation_FE/static/css/main.58462fbc.css.map",
-    "main.ea42c688.js.map": "/wecation_FE/static/js/main.ea42c688.js.map"
+    "main.cd7a9f03.js.map": "/wecation_FE/static/js/main.cd7a9f03.js.map"
   },
   "entrypoints": [
     "static/css/main.58462fbc.css",
-    "static/js/main.ea42c688.js"
+    "static/js/main.cd7a9f03.js"
   ]
 }

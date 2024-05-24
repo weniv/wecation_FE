@@ -15,17 +15,19 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<NavLayout />}>
-          <Route path="/" element={<MapPage />} />
-          <Route path="/community" element={<CommunityPage />} />
-          <Route path="/place/:id" element={<PlacePage />} />
-          <Route path="/user" element={<UserPage />} />
+        <Route path="/wecation_FE">
+          <Route element={<NavLayout />}>
+            <Route path="/" element={<MapPage />} />
+            <Route path="/community" element={<CommunityPage />} />
+            <Route path="/place/:id" element={<PlacePage />} />
+            <Route path="/user" element={<UserPage />} />
+          </Route>
+          <Route element={<LogoLayout />}>
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/signup" element={<SignupPage />} />
+          </Route>
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
-        <Route element={<LogoLayout />}>
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/signup" element={<SignupPage />} />
-        </Route>
-        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );

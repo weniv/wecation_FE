@@ -15,11 +15,18 @@ const GlobalStyle = createGlobalStyle`
     --ColorError: #ff3440;
     --ColorLowError: #ffc533;
     --ColorActivation: #dee8ff;
+
+    --ColorCodePurple: #c893fd;
+    --ColorCodePink: #ed4779;
+    --ColorCodeBlue: #618dff;
+    --ColorCodeGreen: #50c140;
+    --ColorCodeOrange: #ffa52a;
+
     --EffectShadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.04); }
 
   :root[color-theme='dark'] {
     --ColorPrimary: #3075ff;
-    --ColorBackground: #1f2123;
+    --ColorBackground: #02070b;
     --ColorSurface: #ffffff;
     --ColorGrayLv1: #121314;
     --ColorGrayLv2: #595f66;
@@ -28,6 +35,13 @@ const GlobalStyle = createGlobalStyle`
     --ColorError: #fc7377;
     --ColorLowError: #ffe187;
     --ColorActivation: #2b3444;
+
+    --ColorCodePurple: #c893fd;
+    --ColorCodePink: #ed4779;
+    --ColorCodeBlue: #618dff;
+    --ColorCodeGreen: #50c140;
+    --ColorCodeOrange: #ffa52a;
+    
     --EffectShadow: 0px 8px 12px 0px rgba(18, 18, 18, 0.2),
           0px 8px 12px 0px rgba(18, 18, 18, 0.2); }
 

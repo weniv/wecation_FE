@@ -19,7 +19,10 @@ const Post = (props) => {
   return (
     <StyledPost to={`/post/${post.id}`}>
       <StyledProfile>
-        <img src={author.image || "./img/profile/default.png"} alt="profile" />
+        <img
+          src={`.${author.image}` || "./img/profile/default.png"}
+          alt="profile"
+        />
         <p>{author.accountname}</p>
       </StyledProfile>
 
@@ -29,7 +32,7 @@ const Post = (props) => {
           <PostImgList>
             {post.image.map((img, idx) => (
               <li key={idx}>
-                <img src={img} alt="post" />
+                <img src={`.${img}`} alt="post" />
               </li>
             ))}
           </PostImgList>
@@ -77,9 +80,7 @@ const Post = (props) => {
 export default Post;
 
 const StyledPost = styled(Link)`
-  border: 1px solid var(--ColorGrayLv2);
-  border-radius: 1rem;
-  box-shadow: var(--EffectShadow);
+  border-bottom: 1px solid var(--ColorGrayLv2);
   width: auto;
   padding: 3rem;
   display: flex;

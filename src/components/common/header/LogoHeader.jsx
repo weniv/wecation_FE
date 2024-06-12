@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { WIDTH } from "../../utils/constants";
+import { WIDTH } from "../../../utils/constants";
 import { Link } from "react-router-dom";
 import { StyledHeader } from "./HeaderStyle";
 
@@ -9,7 +9,9 @@ const LogoHeader = () => {
     <StyledHeader>
       <HeaderCont>
         <h1>
-          <Link to="/">WE!CATION</Link>
+          <Link to="/">
+            <img src="wecation_fe/img/weniv-logo.svg" alt="위케이션" />
+          </Link>
         </h1>
       </HeaderCont>
     </StyledHeader>

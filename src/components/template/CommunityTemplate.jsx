@@ -1,13 +1,13 @@
 import React from "react";
-import { TemplateSylte } from "./TemplateSylte";
+import { TemplateStyle } from "./TemplateStyle";
 import { PostList } from "../common";
 import { PostData } from "../../data/PostData";
 
 const CommunityTemplate = () => {
   return (
-    <TemplateSylte>
+    <TemplateStyle>
       <PostList data={PostData} />
-    </TemplateSylte>
+    </TemplateStyle>
   );
 };
 

@@ -6,13 +6,15 @@ import usePlaceFilter from "../../hooks/usePlaceFilter";
 function getMarkerImage(type) {
   switch (type) {
     case "코워킹스페이스":
-      return "Green";
-    case "카페":
-      return "Yellow";
-    case "음식점":
-      return "Red";
-    case "숙박":
       return "Purple";
+    case "카페":
+      return "Green";
+    case "음식점":
+      return "Blue";
+    case "숙박":
+      return "Red";
+    case "기관":
+      return "Yellow";
     default:
       return "Blue";
   }

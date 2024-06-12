@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { WIDTH } from "../../utils/constants";
+import { WIDTH } from "../../../utils/constants";
 import { Link } from "react-router-dom";
 import { StyledHeader } from "./HeaderStyle";
 
@@ -8,7 +8,11 @@ const NavHeader = () => {
   return (
     <StyledHeader>
       <HeaderCont>
-        <h1>WE!CATION</h1>
+        <h1>
+          <Link to="/">
+            <img src="./wecation_fe/img/weniv-logo.svg" alt="위케이션" />
+          </Link>
+        </h1>
         <StyledNav>
           <ul>
             <li>
@@ -32,7 +36,7 @@ const HeaderCont = styled.div`
   max-width: ${WIDTH.maxWidth};
   align-items: center;
   justify-content: space-between;
-  gap: 3.2rem;
+  gap: 4rem;
 `;
 
 const StyledNav = styled.nav`
@@ -41,6 +45,6 @@ const StyledNav = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.6rem;
+    gap: 3rem;
   }
 `;

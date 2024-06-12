@@ -2,6 +2,8 @@ export { default as MapPage } from "./MapPage";
 export { default as CommunityPage } from "./CommunityPage";
 export { default as PlacePage } from "./PlacePage";
 
+export { default as PostDetailPage } from "./PostDetailPage";
+
 export { default as UserPage } from "./UserPage";
 
 export { default as LoginPage } from "./LoginPage";

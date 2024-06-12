@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { PlaceData } from "../../data/PlaceData";
-import usePlaceFilter from "../../hooks/usePlaceFilter";
+import { TYPE_COLOR } from "../../utils/constants";
 
 const PlaceOption = (props) => {
   const { selectedOption, handleOptionChange } = props;
 
   return (
     <StyledSelect>
-      <StyledOption bgColor={"var(--ColorCodeGreen)"}>
+      <StyledOption bgColor={TYPE_COLOR["코워킹스페이스"]}>
         <input
           type="checkbox"
           name="place-type"
@@ -18,7 +18,8 @@ const PlaceOption = (props) => {
         />
         <label htmlFor="coworking">코워킹스페이스</label>
       </StyledOption>
-      <StyledOption bgColor={"var(--ColorCodePurple)"}>
+
+      <StyledOption bgColor={TYPE_COLOR["숙박"]}>
         <input
           type="checkbox"
           name="place-type"
@@ -28,7 +29,8 @@ const PlaceOption = (props) => {
         />
         <label htmlFor="accommodation">숙박</label>
       </StyledOption>
-      <StyledOption bgColor={"var(--ColorCodeOrange)"}>
+
+      <StyledOption bgColor={TYPE_COLOR["음식점"]}>
         <input
           type="checkbox"
           name="place-type"
@@ -38,7 +40,8 @@ const PlaceOption = (props) => {
         />
         <label htmlFor="restaurant">음식점</label>
       </StyledOption>
-      <StyledOption bgColor={"var(--ColorCodePink)"}>
+
+      <StyledOption bgColor={TYPE_COLOR["카페"]}>
         <input
           type="checkbox"
           name="place-type"
@@ -48,7 +51,8 @@ const PlaceOption = (props) => {
         />
         <label htmlFor="cafe">카페</label>
       </StyledOption>
-      <StyledOption bgColor={"var(--ColorCodeBlue)"}>
+
+      <StyledOption bgColor={TYPE_COLOR["기관"]}>
         <input
           type="checkbox"
           name="place-type"

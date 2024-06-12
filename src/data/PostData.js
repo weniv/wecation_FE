@@ -10,7 +10,7 @@ export const PostData = {
         name: "오피스제주 조천",
         type: "work",
       },
-      hearted: false,
+      hearted: true,
       heartCount: 10,
       commentCount: 2,
       author: {
@@ -67,7 +67,7 @@ export const PostData = {
     },
     {
       id: "a8feea41-fe2e-42db-975f-4eecd5b03813",
-      content: "새로운 프로젝트를 시작했습니다.",
+      content: "새로운 프로젝트를 시작했습니다 🙂",
       image: [],
       createdAt: "2024-05-23T09:00:00Z",
       updatedAt: "2024-05-23T09:00:00Z",
